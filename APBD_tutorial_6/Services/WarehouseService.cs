@@ -10,7 +10,10 @@ public class WarehouseService : IWarehouseService
     private readonly IOrderRepository _orderRepository;
     private readonly IProductWarehouseRepository _productWarehouseRepository;
 
-    public WarehouseService(IProductRepository productRepository, IWarehouseRepository warehouseRepository, IOrderRepository orderRepository, IProductWarehouseRepository productWarehouseRepository)
+    public WarehouseService(IProductRepository productRepository,
+        IWarehouseRepository warehouseRepository,
+        IOrderRepository orderRepository,
+        IProductWarehouseRepository productWarehouseRepository)
     {
         _productRepository = productRepository;
         _warehouseRepository = warehouseRepository;
@@ -49,7 +52,9 @@ public class WarehouseService : IWarehouseService
 
         _orderRepository.UpdateOrderFulfilledAt(request.IdProduct, request.Amount, request.CreatedAt);
 
-        var price = _productRepository.GetProductPrice(request.IdProduct) * request.Amount;
+        var productPrice = _productRepository.GetProductPrice(request.IdProduct);
+        var price = productPrice * request.Amount;
+        
         return _productWarehouseRepository.InsertProductWarehouse(request.IdProduct, request.IdWarehouse, orderId.Value, request.Amount, price, DateTime.Now);
     }
 }
