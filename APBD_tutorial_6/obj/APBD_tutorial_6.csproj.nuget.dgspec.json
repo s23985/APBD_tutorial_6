@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nokak\\RiderProjects\\APBD_tutorial_6\\APBD_tutorial_6\\APBD_tutorial_6.csproj": {}
+    "C:\\Users\\mattz\\RiderProjects\\APBD_tutorial_6\\APBD_tutorial_6\\APBD_tutorial_6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nokak\\RiderProjects\\APBD_tutorial_6\\APBD_tutorial_6\\APBD_tutorial_6.csproj": {
+    "C:\\Users\\mattz\\RiderProjects\\APBD_tutorial_6\\APBD_tutorial_6\\APBD_tutorial_6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nokak\\RiderProjects\\APBD_tutorial_6\\APBD_tutorial_6\\APBD_tutorial_6.csproj",
+        "projectUniqueName": "C:\\Users\\mattz\\RiderProjects\\APBD_tutorial_6\\APBD_tutorial_6\\APBD_tutorial_6.csproj",
         "projectName": "APBD_tutorial_6",
-        "projectPath": "C:\\Users\\nokak\\RiderProjects\\APBD_tutorial_6\\APBD_tutorial_6\\APBD_tutorial_6.csproj",
-        "packagesPath": "C:\\Users\\nokak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nokak\\RiderProjects\\APBD_tutorial_6\\APBD_tutorial_6\\obj\\",
+        "projectPath": "C:\\Users\\mattz\\RiderProjects\\APBD_tutorial_6\\APBD_tutorial_6\\APBD_tutorial_6.csproj",
+        "packagesPath": "C:\\Users\\mattz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mattz\\RiderProjects\\APBD_tutorial_6\\APBD_tutorial_6\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nokak\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\mattz\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,6 +45,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
             }
           },
           "imports": [
@@ -72,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.106/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
